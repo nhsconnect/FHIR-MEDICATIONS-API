@@ -13,11 +13,5 @@ summary: "Developer Cheat Sheet shortcuts for the <br/>technical build of Visito
 
 | Profile | ValueSets |
 | :--------- |:-------- |
-[PEC Observation 1](https://fhir.nhs.uk/STU3/StructureDefinition/pec-observation-1) | [PEC-ExemptionType-1](https://fhir.nhs.uk/STU3/ValueSet/PEC-ExemptionType-1) <br /> 
-
-
-## 2. Identifiers ##
-
-| Identifier | URI | Comment |
-|--------------------------------------------|----------|----|
-| Observation code | https://fhir.nhs.uk/STU3/ValueSet/pec-observation-code-1 | Observation |
+[Prescription Exemption Observation 1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Prescription-Observation-1) | [Prescription-Exemption-Type-1](https://fhir.nhs.uk/STU3/ValueSet/Prescription-Exemption-Type-1) <br /> 
+[Prescription Exemption Observation 1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Prescription-Observation-1) | [Fhir-Observation-Code-1](https://fhir.nhs.uk/STU3/ValueSet/Fhir-Observation-Code-1) <br /> 
