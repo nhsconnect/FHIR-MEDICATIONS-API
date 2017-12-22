@@ -79,7 +79,7 @@ This section looks at the Visitors and Migrants profile API's covered within thi
 <th style="width:33%;">&nbsp;</th>
 </tr>
 <tr>
-<td><a href="api_pec-observation.html">PEC-Observation</a></td>
+<td><a href="api_prescription-exemption-observation.html">Prescription-Exemption-Observation</a></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>

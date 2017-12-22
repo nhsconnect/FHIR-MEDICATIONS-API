@@ -33,8 +33,8 @@ entries:
       - title: Diagnostics
         output: web
         subfolderitems:
-          - title: PEC Observation
-            url: /api_pec-observation.html
+          - title: Prescription Exemption Observation
+            url: /api_prescription-exemption-observation.html
             output: web
             
       - title: Foundation

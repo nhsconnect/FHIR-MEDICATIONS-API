@@ -1,14 +1,14 @@
 ---
-title: Clinical | API PEC Observation
+title: Clinical | API Prescription Exemption Observation
 keywords: getcarerecord, structured, rest, condition
 tags: [rest,fhir,condition,clinical,api]
 sidebar: accessrecord_rest_sidebar
-permalink: api_pec-observation.html
+permalink: api_prescription-exemption-observation.html
 summary: Measurements and simple assertions made about a patient, device or other subject.
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.reference.html resource="Observation" page="pec-observation-1" fhirlink="[Observation](https://www.hl7.org/fhir/observation.html)" content="N/A" userlink=" " %}
+{% include custom/fhir.reference.html resource="Observation" page="CareConnect-Prescription-Observation-1" fhirlink="[Observation](https://www.hl7.org/fhir/observation.html)" content="N/A" userlink=" " %}
 
 
 ## 1. Read ##
@@ -36,14 +36,14 @@ GET [baseUrl]/Observation?[searchParameters]</div>
     <Observation xmlns="http://hl7.org/fhir">
     <id value="76e39290-d1aa-11e6-9598-1234567c9a66"/>
     	<meta>
-    		<profile value="https://fhir.nhs.uk/StructureDefinition/pec-observation-1"/>
+    		<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-Prescription-Observation-1"/>
     	</meta>
     	<status value="final"/>
     	<code>
     		<coding>
-    			<system value="https://fhir.nhs.uk/PEC-observation-code-1"/>
-    			<code value="0001"/>
-    			<display value="Patient has paid appropriate charges"/>
+    			<system value="https://fhir.nhs.uk/STU3/ValueSet/Fhir-Observation-Code-1"/>
+    			<code value="0002"/>
+    			<display value="Prescription Exemption status observation"/>
     		</coding>
     	</code>
     	<subject>
@@ -51,4 +51,13 @@ GET [baseUrl]/Observation?[searchParameters]</div>
     		<display value="BRIDGE, Joanne (Mrs)"/>
     	</subject>
     	<effectiveDateTime value="2018-12-31T00:00:00+00:00"/>
+    	<value>
+    		<code>
+    			<coding>
+    				<system value="https://fhir.nhs.uk/STU3/ValueSet/Prescription-Exemption-Type-1"/>
+    				<code value="9999"/>
+    				<display value="Not able to confirm exemption from source"/>
+    			</coding>
+    		</code>
+    	</value>
     </Observation>
