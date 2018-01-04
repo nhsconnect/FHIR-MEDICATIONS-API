@@ -5,7 +5,7 @@ tags: [overview]
 sidebar: overview_sidebar
 permalink: index.html
 toc: false
-summary: A brief introduction to getting started with the FHIR&reg; APIs.
+summary: A brief introduction to getting started with the API
 ---
 
 {% include important.html content="This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop the APIs. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
@@ -18,4 +18,4 @@ Welcome to the Medications API site, this work is currently under development an
 
 - Specifications for the Prescription Exemption Checking service.
 
-Currently when a prescription is dispensed at a community pharmacy the citizen declares whether they are exempt from paying the prescription charges or not. This project looks to deliver a new API to assist the pharmacy in validating that exemption.
+Currently when a prescription is dispensed in the community the citizen declares whether they are exempt from paying the prescription charges or not. This project intends to deliver a new API to enable the pharmacy to validate that exemption at the point of dispensing such that this declaration need not be made.
