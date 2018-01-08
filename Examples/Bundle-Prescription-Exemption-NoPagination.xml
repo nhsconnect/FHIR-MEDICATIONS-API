@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="c2acf30e-78a6-4564-beaf-49de8b8ef755"/>
+	<type value="searchset"/>
+	<total value="2"/>
+	<link>
+	 <relation value="self"/>
+	 <url value="http://example.org/fhir/Observation?subject:Patient.identifier=https://fhir.nhs.uk/Id/nhs-number|987543210&amp;code=https://fhir.nhs.uk/fhir-observation-code-1|0002?_format=xml&amp;_pretty=true"/>
+</link>
+	<entry>
+		<fullUrl value="http://example.org/fhir/Observation/9aa76828-fc1c-4f67-9030-eda7f1881289"/>
+		<resource>
+			<Observation>
+				<id value="9aa76828-fc1c-4f67-9030-eda7f1881289"/>
+			  <meta><profile value="https://fhir.nhs.uk/StructureDefinition/prescription-exemption-observation-1"/></meta>
+				<status value="final"/>
+			  <code>
+			    <coding>
+			      <system value="https://fhir.nhs.uk/fhir-observation-code-1"/>
+			      <code value="0002"/>
+			      <display value="Prescription Exemption Observation"/>
+			    </coding>
+			  </code>
+			  <subject>
+			    <reference value="Patient/987543210"/>
+			    <display value="TAYLOR, Mary (Miss)"/>
+			  </subject>
+			  <effectivePeriod>
+			    <end value="2021-09-01"/>
+			  </effectivePeriod>
+			  <valueCodeableConcept>
+			      <coding>
+			        <system value="https://fhir.nhs.uk/prescription-exemptiontype-1"/>
+			          <code value="9060"/>
+			          <display value="has a valid medical exemption certificate - confirmed by source"/>
+			        </coding>
+			  </valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://example.org/fhir/Observation/cbb4b1fa-8f0a-4c81-99b1-56f51d81f542"/>
+		<resource>
+			<Observation>
+				<id value="76e39290-d1aa-11e6-9598-0800200c9a64"/>
+				<meta><profile value="https://fhir.nhs.uk/StructureDefinition/prescription-exemption-observation-1"/></meta>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="https://fhir.nhs.uk/fhir-observation-code-1"/>
+						<code value="0002"/>
+						<display value="Prescription Exemption Observation"/>
+					</coding>
+				</code>
+				<subject>
+			    <reference value="Patient/987543210"/>
+			    <display value="TAYLOR, Mary (Miss)"/>
+			  </subject>
+				<effectivePeriod>
+					<end value="2018-09-01"/>
+				</effectivePeriod>
+				<valueCodeableConcept>
+						<coding>
+							<system value="https://fhir.nhs.uk/prescription-exemptiontype-1"/>
+								<code value="9050"/>
+								<display value="has a valid maternity exemption certificate - confirmed by source"/>
+							</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+</Bundle>
